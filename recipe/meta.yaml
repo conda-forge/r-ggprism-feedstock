@@ -1,4 +1,4 @@
-{% set version = '1.0.3' %}
+{% set version = "1.0.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggprism_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggprism/ggprism_{{ version }}.tar.gz
-  sha256: 57324fcd31c084cc11fedb63ba399aa76ec1a4e23a9bb95a89c1e8925106b025
+  sha256: 83da778298e7fd9eef7e817bafa43ecde18d6a0c26278861319c1173cea59379
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -51,13 +51,11 @@ test:
 about:
   home: https://csdaw.github.io/ggprism/, https://github.com/csdaw/ggprism
   license: GPL-3.0-or-later
-  summary: Provides various themes, palettes, and other functions that are used to customise
-    ggplots to look like they were made in 'GraphPad Prism'. The 'Prism'-look is achieved
-    with theme_prism() and scale_fill|colour_prism(), axes can be changed with custom
-    guides like guide_prism_minor(), and significance indicators added with add_pvalue().
+  summary: Provides various themes, palettes, and other functions that are used to customise ggplots to look like they were made in 'GraphPad Prism'. The 'Prism'-look is achieved with theme_prism() and scale_fill|colour_prism(), axes can be changed with custom guides like guide_prism_minor(), and significance indicators
+    added with add_pvalue().
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
