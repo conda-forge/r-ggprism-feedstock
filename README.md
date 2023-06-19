@@ -1,11 +1,11 @@
-About r-ggprism
-===============
+About r-ggprism-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggprism-feedstock/blob/main/LICENSE.txt)
 
 Home: https://csdaw.github.io/ggprism/, https://github.com/csdaw/ggprism
 
 Package license: GPL-3.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-ggprism-feedstock/blob/main/LICENSE.txt)
 
 Summary: Provides various themes, palettes, and other functions that are used to customise ggplots to look like they were made in 'GraphPad Prism'. The 'Prism'-look is achieved with theme_prism() and scale_fill|colour_prism(), axes can be changed with custom guides like guide_prism_minor(), and significance indicators added with add_pvalue().
 
