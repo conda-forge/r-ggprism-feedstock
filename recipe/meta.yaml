@@ -1,4 +1,4 @@
-{% set version = "1.0.6" %}
+{% set version = "1.0.7" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ggprism_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ggprism/ggprism_{{ version }}.tar.gz
-  sha256: a3c58a82278433eb61e65ef748819fadcf6c2fa5a38770c5c33068d67cdfe6ca
+  sha256: 98175b1a845d22617171476dd6f785e3843e9173e1b7517de2ce00d1506375dc
 
 build:
   number: 0
